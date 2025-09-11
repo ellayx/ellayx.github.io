@@ -16,7 +16,7 @@ layout: default
         {% if post.cover %}
                 <img src="{{post.cover}}" alt="Podcast Cover">
         {% else %}
-                <img src="{{ "/assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
+                <img src="assets/img/Podcast_Cover_500.jpg" alt="Podcast Cover">
         {% endif %}
         
         <p>{{page.description}}</p>
@@ -35,11 +35,7 @@ layout: default
         {% endif %}
 
         {{ content }}
-
-        {% if site.data.settings.shownotes == true %}
-                {% include shownotes.html %}
-        {% endif %}
-
+ß
         
 </div>
 {% if site.settings.disqus-shortname %}

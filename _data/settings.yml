@@ -8,9 +8,9 @@ pages:
 
 
 social:
-  - {icon: 'youtube', type: "brand", link: '#'}  
-  - {icon: 'envelope', type: "solid", link: 'mailto:ellaina.yxding@gmail.com'}
-  - {icon: 'linkedin', type: "solid", link: "#"}
+  - {icon: 'youtube', link: '#'}  
+  - {icon: 'envelope', link: 'mailto:ellaina.yxding@gmail.com'}
+  - {icon: 'linkedin', link: "#"}
 
 
 

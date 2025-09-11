@@ -1,24 +1,25 @@
-<img src="{{"assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
+<img src="/assets/img/Podcast_Cover.jpg" alt="Podcast Cover">
 
 <div id = "info">
     <h3>{{site.title}}</h3>
     <h4><i>{{site.description}}</i></h4>
 </div>
 <div id = "social">
-    {% for item in site.data.settings.social %}
-    {% if item.type == "brand"%}
-      <a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fab fa-{{item.icon}}" aria-hidden="true"></i></a>
-    {% endif %}
-    {% if item.type == "solid"%}
-      <a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fas fa-{{item.icon}}" aria-hidden="true"></i></a>
-    {% endif %} 
-    {% if item.type == ""%}
-        <a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fa fa-{{item.icon}}" aria-hidden="true"></i></a>
-    {% endif %} 
-  {% endfor %}
+    
+  <a href="https://linkedin.com/in/ellainading" target="_blank" id="linkedin-in">
+    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+  </a>
+  <a href="https://github.com/ellayx" target="_blank" id="github">
+    <i class="fab fa-github" aria-hidden="true"></i>
+  </a>
+  <a href="mailto:ellaina.yxding@gmail.com" target="_blank" id="envelope">
+    <i class="fas fa-envelope" aria-hidden="true"></i>
+  </a>
+
+
 </div>
 <div id = "ascoltare">
-    <h3>Where To Listen</h3>
+    <h3>Reach Out</h3>
     <div id = "lista-siti">
         <ul id = "siti">
           {% for item in site.data.settings.websites-podcast  %}
