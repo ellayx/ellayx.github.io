@@ -1,9 +1,9 @@
 analytics-id: 
 #Pages
 pages:
-  - {name: 'Home', link: 'home.html'}
-  - {name: 'Projects', link: '#'}
-  - {name: '', link: '#'}
+  - {name: 'Experience', link: '/projects'}
+  - {name: 'Projects', link: '/projects/'}
+  - {name: 'Extras', link: '#'}
   - {name: 'GitHub', link: 'https://github.com/ellayx'}
 
 
@@ -16,7 +16,3 @@ social:
 
 translate-date: true #See _includes/date.html to translate the months' name
 shownotes: true
-
-#Disqus
-disqus:
-  disqus_shortname: 

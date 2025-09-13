@@ -35,6 +35,53 @@
             font-style: italic;
         }
     }
+    .about {
+        background: #ffffff;   /* light background */
+        padding: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+
+        p {
+            line-height: 1.5;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+ 
+    .skills {
+        background: #ffffff;   /* light background */
+        padding: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+
+        h2 {
+            margin-bottom: 15px;
+        }
+    }
+    .bubble {
+        background: #ec9cf7; /* or your $base-color */
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        transition: transform 0.2s ease-in-out;
+    }
+    .skill-bubbles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+      
+    .bubble:hover {
+        transform: scale(1.1);
+    }
+      
     .pagination a, .pagination span {
         padding: 7px 18px;
         border: 1px solid #eee;
