@@ -1,7 +1,7 @@
 analytics-id: 
 #Pages
 pages:
-  - {name: 'Experience', link: '/projects'}
+  - {name: 'Experience', link: '/experience/'}
   - {name: 'Projects', link: '/projects/'}
   - {name: 'Extras', link: '#'}
   - {name: 'GitHub', link: 'https://github.com/ellayx'}
@@ -14,5 +14,5 @@ social:
 
 
 
-translate-date: true #See _includes/date.html to translate the months' name
+translate-date: false 
 shownotes: true

@@ -3,22 +3,11 @@ layout: default
 ---
 
 <div class = "single-post">
-        <div class="categories">
-                {% assign categories = page.categories %}
-                {% for category in categories %}
-                  <a href="{% capture url %}/cat/#{{ category | slugify }}{% endcapture %}
-                  {{ url | absolute_url }}">{{category}}</a>
-                  {% unless forloop.last %}&nbsp;{% endunless %} 
-                {% endfor %}
-        </div>
+      
         <h2>{{page.title}}</h2>
 
-        {% if post.cover %}
-                <img src="{{post.cover}}" alt="Podcast Cover">
-        {% else %}
-                <img src="assets/img/Podcast_Cover_500.jpg" alt="Podcast Cover">
-        {% endif %}
-        
+        {% include player.html file = file title = title %}
+
         <p>{{page.description}}</p>
 
         {% capture file %}
@@ -28,11 +17,7 @@ layout: default
                 {{- page.title -}}
         {% endcapture %}
 
-        {% include player.html file = file title = title %}
 
-        {% if page.videoid %}
-                {% include video.html videoid = page.videoid %}
-        {% endif %}
 
         {{ content }}   
 </div>
