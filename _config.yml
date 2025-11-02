@@ -22,7 +22,17 @@ pagination:
   permalink: '/page:num/'
   sort_field: 'date'
   sort_reverse: true
-  collection: 'posts'  # optional, defaults to _posts
+
+collections:
+  experience:
+    output: true
+    permalink: /experience/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  hobbies:
+    output: true
+    permalink: /hobbies/:name/
 
 #Pagination
 #paginate: 5

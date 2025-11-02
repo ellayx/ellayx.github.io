@@ -3,7 +3,7 @@ analytics-id:
 pages:
   - {name: 'Experience', link: '/experience/'}
   - {name: 'Projects', link: '/projects/'}
-  - {name: 'Extras', link: '#'}
+  - {name: 'Hobbies', link: '/hobbies/'}
   - {name: 'GitHub', link: 'https://github.com/ellayx'}
 
 
