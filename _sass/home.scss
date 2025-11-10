@@ -7,6 +7,7 @@
         height: 210px;
         margin-bottom: 80px;
         background-color: white;
+        border-radius: 10px;
         p{
             padding: 0 5px;
         }
@@ -21,14 +22,14 @@
             }
         }
         img{
-           width: auto;
-           height: 210px;
+           width: 262px;
+           height: 262px;
            float: left;
            margin-right: 10px;
+           display: block;
+           border-radius: 10px;
         }
-        .player-container{
-            margin: 10px auto;
-        }
+
         .info{
             margin-bottom: 10px;
             font-size: 1rem;

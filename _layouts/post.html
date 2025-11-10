@@ -5,9 +5,15 @@ layout: default
 <div class = "single-post">
       
         <h2>{{page.title}}</h2>
+        <br><br>
 
-        {% include player.html file = file title = title %}
-
+        <div class="cover-img">
+                {% if page.pic %}
+                  <img src="{{ page.pic | absolute_url }}" alt="{{ page.title }} Cover">
+                {% else %}
+                  <img src="/assets/img/Podcast_Cover_500.jpg" alt="Default Cover">
+                {% endif %}
+              </div>
         <p>{{page.description}}</p>
 
         {% capture file %}

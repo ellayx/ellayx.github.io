@@ -10,9 +10,13 @@ pagination:
 
 <div class="post">
 
-    <div class = "cover-img">
-      <img src="/assets/img/Chick.jpg" alt="Cover">
-    </div>
+  <div class="cover-img">
+    {% if post.cover %}
+      <img src="{{ post.cover | absolute_url }}" alt="{{ post.title }} Cover">
+    {% else %}
+      <img src="/assets/img/Chick.jpg" alt="Default Cover">
+    {% endif %}
+  </div>
 
     <div class = title>
         <h2 id = "post-title"><a href="{{ post.url  | absolute_url }}">{{ post.title }}</a></h2>
@@ -39,7 +43,6 @@ pagination:
     {% capture title %}
         {{- post.title -}}
     {% endcapture %}
-    {% include player.html file=file title=title %}
 
     <div class = "long-excerpt">
         <p>
